@@ -1,0 +1,56 @@
+# ---
+# Header menu
+# ---
+
+main:
+- name: About
+  identifier: about
+  url: about
+  weight: 10
+
+- name: Resources
+  url: resources
+  weight: 20
+
+- name: Working Groups
+  url: workinggroups
+  weight: 30
+
+- name: Events
+  url: events
+  weight: 40
+
+- name: Get involved
+  url: getinvolved
+  weight: 50
+
+# ---
+# Social menu
+# ---
+
+social:
+- name: GitHub
+  pre: <img class='feather feather-github' src='/images/github.svg'/></img>
+  url: https://github.com/uk-tre
+  weight: 10
+  title: Visit the GitHub organisation
+  
+- name: Slack
+  pre: <img class='feather feather-github' src='/images/slack.svg'/></img>
+  url: https://join.slack.com/t/uktrecommunity/shared_invite/zt-26r7jz25d-J5iV0XoqyLepEiKk4XpJVg
+  weight: 20
+  title: Join the Slack channel
+
+# ---
+# Footer menu
+# ---
+
+footer:
+- name: Privacy policy
+  weight: 90
+
+- name: Code of conduct
+  weight: 90
+
+
+
