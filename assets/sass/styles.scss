@@ -1,0 +1,59 @@
+// Colours
+
+:root {
+    --primary-colour: #0ee;
+    --secondary-colour: #07e;
+    --tertiary-colour: #0e7;
+}
+
+.padded {
+    margin-bottom: 5rem !important;
+}
+
+.navbar {
+    padding: .75rem 0;
+    background-color: #33ffff;
+    background-image: linear-gradient(to bottom, rgba(var(--bd-violet-rgb), 1), rgba(var(--bd-violet-rgb), 0.95));
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15),inset 0 -1px 0 rgba(0,0,0,0.15);
+}
+
+// ---
+// BUTTONS
+// ---
+.btn-branded {
+    background-color: #33ffff;
+    width: fit-content;
+    margin: auto;
+}
+
+.btn-branded:hover {
+    background-color: #3399FF;
+}
+
+// ---
+// TEXT
+// --- 
+
+.primary-text {
+    color: var(--primary-colour);
+}
+
+.secondary-text {
+    color: var(--secondary-colour);
+}
+
+.tertiary-text {
+    color: var(--tertiary-colour);
+}
+
+// ---
+// CARDS
+// --- 
+
+.branded-card {
+    padding: 20px;
+    border-color: var(--primary-colour);
+    border-width: 2px;
+    border-radius: 10px;
+    margin: 8px;
+}

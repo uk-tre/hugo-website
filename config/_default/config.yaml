@@ -1,0 +1,6 @@
+baseURL: https://example.org/
+languageCode: en-us
+title: UK TRE Community
+theme: hugo-bootstrap-theme
+themesdir: node_modules/@filipecarneiro
+copyright: Add our licence
