@@ -4,3 +4,9 @@ title: UK TRE Community
 theme: hugo-bootstrap-theme
 themesdir: node_modules/@filipecarneiro
 copyright: Add our licence
+
+# Taxonomies
+taxonomies:
+  tag: tags
+
+  
