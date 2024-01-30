@@ -16,7 +16,14 @@
                             {{ .Title }}
                         </a>
                     </h4>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">{{ .Date | time.Format ":date_long" }}</h6>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">
+                        <b>Date: </b>{{ .Date | time.Format "January 01, 2006, 15:00 PM" }} - {{ .Params.end_date |
+                        time.Format
+                        "15:00 PM" }}
+                    </h6>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">
+                        <b>Location: </b>{{ .Params.location }}
+                    </h6>
                     <p class="card-text mt-3">
                         {{ with .Params.description }}
                         {{ . }}
@@ -61,8 +68,14 @@
                                             {{ .Title }}
                                         </a>
                                     </h4>
-                                    <h6 class="card-subtitle mb-2 text-body-secondary">{{ .Date | time.Format
-                                        ":date_long" }}</h6>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">
+                                        <b>Date: </b>{{ .Date | time.Format "January 01, 2006, 15:00 PM" }} - {{
+                                        .Params.end_date |
+                                        time.Format "15:00 PM" }}
+                                    </h6>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">
+                                        <b>Location: </b>{{ .Params.location }}
+                                    </h6>
                                     <p class="card-text mt-3">
                                         {{ with .Params.description }}
                                         {{ . }}
@@ -71,7 +84,7 @@
                                         {{ end }}
                                     </p>
                                     <a type="button" class="btn btn-branded" href="{{ .Permalink }}">
-                                        More info
+                                        More info & resources
                                     </a>
                                 </div>
 
