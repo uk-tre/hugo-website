@@ -2,7 +2,7 @@
 title: "Resources"
 ---
 
-# Resources
+<!-- # Resources -->
 
 ## [RESOURCE 1]
 

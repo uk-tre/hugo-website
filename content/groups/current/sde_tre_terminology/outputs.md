@@ -2,7 +2,7 @@
 title: "Final outputs"
 ---
 
-# Final outputs
+<!-- # Final outputs -->
 
 ## [RESOURCE 1]
 

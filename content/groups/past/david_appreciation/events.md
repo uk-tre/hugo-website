@@ -1,7 +1,7 @@
 ---
 title: "Events and meetings"
 ---
-# Events and meetings
+<!-- # Events and Meetings -->
 
 ## Meetings
 

@@ -1,7 +1,7 @@
 ---
 title: "Charter"
 ---
-# Charter
+<!-- # Charter -->
 
 testestestestest
 
