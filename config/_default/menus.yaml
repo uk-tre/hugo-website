@@ -13,7 +13,7 @@ main:
   weight: 20
 
 - name: Working Groups
-  url: workinggroups
+  url: groups
   weight: 30
 
 - name: Events
