@@ -5,8 +5,12 @@ theme: hugo-bootstrap-theme
 themesdir: node_modules/@filipecarneiro
 copyright: Add our licence
 
+# Build all pages that have a frontmatter date setting of the future - this allows us to publish pages for events happening in the future
+buildFuture: true
+
 # Taxonomies
 taxonomies:
   tag: tags
+  category: categories
 
   

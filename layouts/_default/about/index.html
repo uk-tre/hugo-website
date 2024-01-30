@@ -6,25 +6,26 @@
 </section>
 <section class="section padded container">
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-        {{ range .Site.Taxonomies.tags.about  }}
-            <div class="col">
-                <div class="card h-100 branded-card">
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a class="stretched-link text-primary text-decoration-none" href="{{ .Permalink }}">
-                                {{ .Title }}
-                            </a>
-                        </h4>
-                        <p class="card-text mt-3">
-                            {{ with .Params.description }}
-                                {{ . }}
-                            {{ else }}
-                                {{ .Summary | truncate 200 }}
-                            {{ end }}
-                        </p>
-                    </div>
+        {{ range .Site.Taxonomies.tags.about }}
+        <div class="col">
+            <div class="card h-100 branded-card">
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a class="stretched-link text-primary text-decoration-none" href="{{ .Permalink }}">
+                            {{ .Title }}
+                        </a>
+                    </h4>
+
+                    <p class="card-text mt-3">
+                        {{ with .Params.description }}
+                        {{ . }}
+                        {{ else }}
+                        {{ .Summary | truncate 200 }}
+                        {{ end }}
+                    </p>
                 </div>
             </div>
+        </div>
         {{ end }}
     </div>
 </section>

@@ -1,0 +1,88 @@
+{{ define "main" }}
+
+<section class="section padded container">
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Description }}</p>
+</section>
+<section class="section padded container">
+    <h2>Upcoming events</h2>
+    <div class="col">
+        {{ range .Site.Taxonomies.tags.upcoming_event }}
+        <div class="col">
+            <div class="card h-100 branded-card">
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a class="text-primary text-decoration-none" href="{{ .Permalink }}">
+                            {{ .Title }}
+                        </a>
+                    </h4>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">{{ .Date | time.Format ":date_long" }}</h6>
+                    <p class="card-text mt-3">
+                        {{ with .Params.description }}
+                        {{ . }}
+                        {{ else }}
+                        {{ .Summary | truncate 200 }}
+                        {{ end }}
+                    </p>
+                    <a type="button" class="btn btn-branded" href="{{ .Params.register_url }}">
+                        Register
+                    </a>
+                    <p class=" card-text mt-3">
+                        <a href="{{ .Permalink }}">
+                            More info
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</section>
+<section class="section padded container">
+    <h2>Past events</h2>
+    <div class="accordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    See past events
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                <div class="accordion-body">
+                    <div class="col">
+                        {{ range .Site.Taxonomies.tags.past_event }}
+                        <div class="col">
+                            <div class="card h-100 branded-card">
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        <a class="text-primary text-decoration-none" href="{{ .Permalink }}">
+                                            {{ .Title }}
+                                        </a>
+                                    </h4>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">{{ .Date | time.Format
+                                        ":date_long" }}</h6>
+                                    <p class="card-text mt-3">
+                                        {{ with .Params.description }}
+                                        {{ . }}
+                                        {{ else }}
+                                        {{ .Summary | truncate 200 }}
+                                        {{ end }}
+                                    </p>
+                                    <a type="button" class="btn btn-branded" href="{{ .Permalink }}">
+                                        More info
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+{{ end }}
