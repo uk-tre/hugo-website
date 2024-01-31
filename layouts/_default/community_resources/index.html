@@ -1,0 +1,126 @@
+{{ define "main" }}
+<!-- <div class="section padded container">
+    {{ range $key, $taxonomy := .Site.Taxonomies.tag_resource_types }}
+    <li>{{ $key }}</li>
+    <ul>
+        {{ range $taxonomy.Pages }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end }}
+    </ul>
+    {{end}}
+</div> -->
+
+<section class="section padded container">
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Description }}</p>
+    <p>
+        You can also find the resources and outputs from our working groups by visiting the <b>working groups page</b>
+    </p>
+    <a type="button" class="btn btn-branded" href="/groups">
+        Visit working groups page
+    </a>
+    <div class="callout callout-warning">
+        <strong>Note: </strong> This page is simply signposting to different resources available within the community -
+        presence of a resource on this page does not signify community endorsement.
+        Please evaluate each resource in your own terms!
+    </div>
+</section>
+<section class="section padded container">
+    <h2>Resources (by type)</h2>
+    <p>Community resources by the type of resource they are</p>
+    <div class="accordion">
+        {{ range $key, $taxonomy := .Site.Taxonomies.tag_resource_types }}
+        {{ $formatTitle := strings.Replace $key "_" " " }}
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading{{$key}}">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse{{$key}}" aria-expanded="true" aria-controls="collapse{{$key}}">
+                    {{ strings.Title $formatTitle }}
+                </button>
+            </h2>
+            {{ range $taxonomy.Pages }}
+            <div id="collapse{{$key}}" class="accordion-collapse collapse" aria-labelledby="heading{{$key}}">
+                <div class="accordion-body">
+                    <div class="col">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="container">
+                                    <div class="row row-cols-2">
+                                        <div class="col">
+                                            <h3>Title</h3>
+                                        </div>
+                                        <div class="col">
+                                            <h3>Owner(s)</h3>
+                                        </div>
+                                        <div class="col">
+                                            <a href="{{ .Permalink }}">
+                                                {{ .Title }}
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            {{ range .Params.owners }}
+                                            {{ . }}</br>
+                                            {{ end }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        {{end}}
+    </div>
+</section>
+<section class="section padded container">
+    <h2>Resources (by topic)</h2>
+    <p>Community resources by the topic the resource is covering</p>
+    <div class="accordion">
+        {{ range $key, $taxonomy := .Site.Taxonomies.tag_resource_topics }}
+        {{ $formatTitle := strings.Replace $key "_" " " }}
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading{{$key}}">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse{{$key}}" aria-expanded="true" aria-controls="collapse{{$key}}">
+                    {{ strings.Title $formatTitle }}
+                </button>
+            </h2>
+            {{ range $taxonomy.Pages }}
+            <div id="collapse{{$key}}" class="accordion-collapse collapse" aria-labelledby="heading{{$key}}">
+                <div class="accordion-body">
+                    <div class="col">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="container">
+                                    <div class="row row-cols-2">
+                                        <div class="col">
+                                            <h3>Title</h3>
+                                        </div>
+                                        <div class="col">
+                                            <h3>Owner(s)</h3>
+                                        </div>
+                                        <div class="col">
+                                            <a href="{{ .Permalink }}">
+                                                {{ .Title }}
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            {{ range .Params.owners }}
+                                            {{ . }}</br>
+                                            {{ end }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        {{end}}
+    </div>
+</section>
+{{ end }}
