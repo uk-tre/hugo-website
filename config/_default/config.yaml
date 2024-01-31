@@ -12,5 +12,7 @@ buildFuture: true
 taxonomies:
   tag: tags
   category: categories
+  tag_resource_type: tag_resource_types
+  tag_resource_topic: tag_resource_topics
 
   

@@ -1,0 +1,47 @@
+{{ define "main" }}
+
+<section class="section padded container">
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Description }}</p>
+</section>
+
+<section class="section padded container my-3">
+    <div class="row justify-content-center text-center mt-lg-3">
+        <div class="col-lg-4">
+            <svg xmlns='http://www.w3.org/2000/svg' class='feather text-violet feather-big' width="4em" height="4em">
+                <use href="{{ `images/feather/feather-sprite.svg#mail` | relURL }}" />
+            </svg>
+            <h3 class="h3">Join the mailing list</h3>
+            <p>Our primary source for community announcements and discussions</p>
+            <a type="'button" class="btn btn-branded"
+                href="https://www.jiscmail.ac.uk/cgi-bin/wa-jisc.exe?SUBED1=UK-TRE-COMM&A=1" target="_blank">Join
+                list</a>
+        </div>
+        <div class="col-lg-4">
+            <svg xmlns='http://www.w3.org/2000/svg' class='feather text-violet feather-big' width="4em" height="4em">
+                <use href="{{ `images/feather/feather-sprite.svg#slack` | relURL }}" />
+            </svg>
+            <h3 class="h3">Chat to us on Slack</h3>
+            <p>A more informal space for working groups and community members to chat directly</p>
+            <a type="'button" class="btn btn-branded"
+                href="https://join.slack.com/t/uktrecommunity/shared_invite/zt-26r7jz25d-J5iV0XoqyLepEiKk4XpJVg"
+                target="_blank">Join
+                Slack</a>
+        </div>
+        <div class="col-lg-4">
+            <svg xmlns='http://www.w3.org/2000/svg' class='feather text-violet feather-big' width="4em" height="4em">
+                <use href="{{ `images/feather/feather-sprite.svg#github` | relURL }}" />
+            </svg>
+            <h3 class="h3">Star our repos</h3>
+            <p>We have a GitHub organisation, where we track all community tasks and discuss thorny issues</p>
+            <a type="'button" class="btn btn-branded" href="https://github.com/uk-tre" target="_blank">Star GitHub
+                repos</a>
+        </div>
+    </div>
+</section>
+
+<section class="section padded container">
+    Or <a href="mailto:uktrecommunity@gmail.com">send us an email</a>.
+</section>
+
+{{ end }}

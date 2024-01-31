@@ -5,7 +5,7 @@ title: "Charter"
 
 ## Background
 
-xxxxx
+xxxx
 
 ## Targets
 
