@@ -50,6 +50,7 @@ footer:
   weight: 90
 
 - name: Code of conduct
+  pageref: /about/code_of_conduct
   weight: 90
 
 

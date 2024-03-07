@@ -2,3 +2,5 @@ public
 node_modules
 resources
 .hugo_build.lock
+
+content/about/code_of_conduct.md

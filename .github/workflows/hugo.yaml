@@ -45,6 +45,13 @@ jobs:
       - name: Install Node.js dependencies
         run: npm ci
 
+      - name: Copy UK TRE code of conduct
+        run: |
+          cp content/about/code_of_conduct.template content/about/code_of_conduct.md
+          curl -sfSL \
+            https://raw.githubusercontent.com/uk-tre/.github/main/CODE_OF_CONDUCT.md >> \
+            content/about/code_of_conduct.md
+
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
