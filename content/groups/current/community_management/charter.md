@@ -3,6 +3,4 @@ title: "Charter"
 ---
 <!-- # Charter -->
 
-testestestestest
-
-## asdsadsa
+To be completed
