@@ -1,6 +1,6 @@
 ---
-title: "Events Management"
-description: "How events are managed, run and communicated within the community"
+title: "Consensus, Review and Objection Management "
+description: "The process for how consensus is approached for community decisions, review of community initiatives, and how objections are managed."
 draft: false
 tags:
 - governance
@@ -77,7 +77,7 @@ Further to this, members of the [Community Management Working Group](/groups/com
 All suggested sessions are reviewed by the [Community Management Working Group](/groups/community_management), who then decide the final agenda. 
 This is communicated with everybody who suggested a session, and justification will be provided to anyone who has suggested a session that does not make it onto the final agenda.
 
-If members are unsatisfied with any decision that is made about proposed sessions, they can reach out to the [Community Management Working Group]({{< relref "../../groups/current/community_management" >}}), and if required raise an [Objection]({{< relref "/consensus-review-objection" >}}).
+If members are unsatisfied with any decision that is made about proposed sessions, they can reach out to the [Community Management Working Group](/groups/community_management), and if required raise an Objection (insert link).
 
 Members who suggested a session that is added to the final agenda may be needed to provide additional information for the event.
 
