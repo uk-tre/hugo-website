@@ -57,3 +57,9 @@ As people who regularly design, develop and operate the policies, processes and 
 - To design our projects to be extensible and our communities to be easy and welcoming for others to contribute to.
 - To be active stewards of these open projects, welcoming contributions of all kinds from the wider community.
 - To actively share, review and revise this declaration on an ongoing basis
+
+---
+
+## Outstanding discussion & objections
+
+The above is the current live and used commitment. Any ongoing discussions about amendments to this process will be linked here!

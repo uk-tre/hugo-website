@@ -6,7 +6,7 @@ tags:
 - governance
 ---
 
-# Events management
+# Events management
 
 ## Overview
 
@@ -111,3 +111,8 @@ If not approved, the [Community Management Working Group]({{< relref "../../grou
 Members can then amend their form and resubmit, or if required, seek further clarification from the [Community Management Working Group]({{< relref "../../groups/current/community_management" >}}). 
 If required, members can raise an [Objection]({{< relref "/consensus-review-objection" >}}).
 
+---
+
+## Outstanding discussion & objections
+
+The above is the current live and used process. Any ongoing discussions about amendments to this process will be linked here!
